@@ -27,6 +27,7 @@ const Menu = (props) => {
         <div className="row">
             {menu}
         </div>
+    
     );
 }
 export default Menu;

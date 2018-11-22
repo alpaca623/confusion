@@ -24,4 +24,11 @@ https://www.coursera.org/learn/front-end-react/supplement/wiObL/exercise-instruc
 > 여기서 포인트로 짚을만한 것들은 아래와 같다. 
 1. es6문법 -> 매개변수로 객체의 각 요소를 매칭해서 를 받을 수 잇다. & http://mollangk.tistory.com/29 -> spread 연산자 확인
 1. 컴포넌트를 분리시켜서 함수형으로 만드는 것은 개인의 역량일듯..
-1. 
+
+
+### 3. react.js 3주차 Day 4
+https://www.coursera.org/learn/front-end-react/supplement/dLbRz/exercise-instructions-header-and-footer
+- Header and Footer 추가
+- 가상 Dom 이해
+
+> 디자인이 안먹음.. 이상함.. 우선 지금 중요한게 아니라서 그냥 넘어감.. >> App.css를 import 하지 않아서 생긴 문제. 처리됨
