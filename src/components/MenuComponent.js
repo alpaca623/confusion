@@ -10,13 +10,13 @@ class Menu extends Component{
     }
 
     render(){
-        const menu = this.props.dishes.map((dish) => {
+        const menu = this.props.dishes.map(({ id, image, name }) => {
             return(
                 <dic className="col-12 col-md-5 m-1">
-                    <Card key={dish.id} onClick={() => this.props.onClick(dish.id)}>
-                        <CardImg width="100%" src={dish.image} alt={dish.name} />
+                    <Card key={id} onClick={() => this.props.onClick(id)}>
+                        <CardImg width="100%" src={image} alt={name} />
                         <CardImgOverlay>
-                            <CardTitle>{dish.name}</CardTitle>
+                            <CardTitle>{name}</CardTitle>
                         </CardImgOverlay>
                     </Card>
                 </dic>

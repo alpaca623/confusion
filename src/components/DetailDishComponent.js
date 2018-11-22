@@ -2,19 +2,26 @@ import React from 'react';
 import { Card, CardImg, CardText, CardBody,
     CardTitle } from 'reactstrap';
 
-const DetailDish = (props) => {
+const RenderDish = ({image, name, description}) => {
+    return(
+        <Card>
+            <CardImg top src={image} alt={name} />
+            <CardBody>
+                <CardTitle>{name}</CardTitle>
+                <CardText>{description}</CardText>
+            </CardBody>
+        </Card>
+    )
+}
+
+const DishDetail = (props) => {
     const { dish } = props;
+    console.log(dish);
     if(dish){
         return(
             <div className="row">
                 <dic className="col-12 col-md-5 m-1">
-                    <Card>
-                        <CardImg top src={dish.image} alt={dish.name} />
-                        <CardBody>
-                            <CardTitle>{dish.name}</CardTitle>
-                            <CardText>{dish.description}</CardText>
-                        </CardBody>
-                    </Card>
+                    <RenderDish {...dish} />
                 </dic>
             </div>
         )
@@ -25,4 +32,4 @@ const DetailDish = (props) => {
     }
 };
 
-export default DetailDish;
+export default DishDetail;
