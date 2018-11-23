@@ -4,7 +4,7 @@ import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 const RenderMenuItem = ({dish, onClick}) => {
     const {id, image, name} = dish;
     return(
-        <Card key={id} onClick={() => onClick(id)}>
+        <Card key={id}>
             <CardImg width="100%" src={image} alt={name} />
             <CardImgOverlay>
                 <CardTitle>{name}</CardTitle>
@@ -15,19 +15,25 @@ const RenderMenuItem = ({dish, onClick}) => {
 
 const Menu = (props) => {
     const {dishes, onClick} = props;
-    const menu = dishes.map((dish) =>{
+    if(dishes){
+        const menu = dishes.map((dish) =>{
+            return(
+                <div key={dish.id} className="col-12 col-md-5 m-1">
+                    <RenderMenuItem dish={dish} onClick={onClick} />
+                </div>
+            );
+        });
         return(
-            <div key={dish.id} className="col-12 col-md-5 m-1">
-                <RenderMenuItem dish={dish} onClick={onClick} />
+            <div className="container">
+                <div className="row">
+                    {menu}
+                </div>
             </div>
         );
-    });
-
-    return(
-        <div className="row">
-            {menu}
-        </div>
-    
-    );
+    }else{
+        return(
+            <div></div>
+        )
+    }
 }
 export default Menu;

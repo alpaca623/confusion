@@ -32,3 +32,11 @@ https://www.coursera.org/learn/front-end-react/supplement/dLbRz/exercise-instruc
 - 가상 Dom 이해
 
 > 디자인이 안먹음.. 이상함.. 우선 지금 중요한게 아니라서 그냥 넘어감.. >> App.css를 import 하지 않아서 생긴 문제. 처리됨
+
+### 4. react.js 3주차 Day 5
+https://www.coursera.org/learn/front-end-react/supplement/X2eeR/exercise-instructions-react-router
+- React Router 사용을 위해 install한다.
+- React 라우터의 경로를 설정하여 React 애플리케이션 내의 다양한 페이지로 이동할 수 있습니다.
+> 여기서부터 이제 헷갈림.. 강의 들으면서 시작하고 있음
+
+> ```onDishSelect(dishId){ ~ }```를 지우는 이유는, 후에 새로운 방식으로 선택하는 것을 보여주기 위함이라고 한다.(DishDetailComponent.js에서 처리할 예정인듯)
