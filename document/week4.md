@@ -23,3 +23,6 @@ https://www.coursera.org/learn/front-end-react/lecture/vdABh/exercise-video-sing
     - **object**
         - React 라우터를 활용하여 단일 페이지 응용 프로그램 개발 가능
         - React 라우터 지원을 사용하여 다양한 페이지를 탐색 할 수있는 방법을 제공하십시오.
+    - detail analysis
+        - ContactComponent가 추가됨. 이 컴포넌트는 presentational component로 구분할 수 있다.
+        - json data에 변화를 줌. 기존 dishes.js에서 4개의 파일로 분리. 각각 dishes / comments / promotions / leaders.
