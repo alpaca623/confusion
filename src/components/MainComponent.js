@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Home from './HomeComponent';
 import Menu from './MenuComponent';
 import Contact from './ContactComponent';
-// import DishDetail from './DishDetailComponent';
+import DishDetail from './DishDetailComponent';
 import { DISHES } from '../shared/dishes';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
@@ -36,11 +36,22 @@ class Main extends Component{
                 />
             );
         }
+
+        const DishWithId = ({match}) => {
+            console.log(match);
+            return(
+                <DishDetail 
+                dish={this.state.dishes.filter((dish) => dish.id === parseInt(match.params.id, 10))[0]}
+                comments={this.state.comments.filter((comment) => comment.id === parseInt(match.params.id, 10))}
+                />
+            )
+        }
         return(
             <div>
                 <Header />
                 <Switch>
                     <Route path="/home" component={HomePage} />
+                    <Route path="/menu/:id" component={DishWithId} />
                     <Route exact path="/menu" component={() => <Menu dishes={this.state.dishes} />} />
                     <Route exact path="/contactus" component={Contact} />
                     <Redirect to="/home" />
