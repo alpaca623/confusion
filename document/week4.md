@@ -26,3 +26,7 @@ https://www.coursera.org/learn/front-end-react/lecture/vdABh/exercise-video-sing
     - detail analysis
         - ContactComponent가 추가됨. 이 컴포넌트는 presentational component로 구분할 수 있다.
         - json data에 변화를 줌. 기존 dishes.js에서 4개의 파일로 분리. 각각 dishes / comments / promotions / leaders.
+        - 분리된 데이터들을 각각 spa로 구성한다는 의미 같다.. HomeComponent.js를 업데이트 한다. 
+            - 데이터들을 받아 각 배열 중 featured 값이 true인것을 찾아 display 시킨다.
+        - MainComponent.js의 HomePage함수에 변경을 준다. 이렇게 하면 HomeComponent.js에서 전달된 데이터들이 각각 RenderCard에 전달되고 dish, promotion, leader가 각각 카드로 render된다.
+        - 각각의 카드가 SPA인듯.?
