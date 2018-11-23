@@ -40,3 +40,11 @@ https://www.coursera.org/learn/front-end-react/supplement/X2eeR/exercise-instruc
 > 여기서부터 이제 헷갈림.. 강의 들으면서 시작하고 있음
 
 > ```onDishSelect(dishId){ ~ }```를 지우는 이유는, 후에 새로운 방식으로 선택하는 것을 보여주기 위함이라고 한다.(DishDetailComponent.js에서 처리할 예정인듯)
+
+> 기존의 render시키던 Menu, DishDetail component를 지우고, route를 이용해서 Main을 보여줄 것이라고 한다.
+
+> exact path의 의미는 다음과 같다. that means that the path should match this exact path name.
+
+> Route 태그에 컴포넌트를 넣는 방식은 두가지가(더 있나?) 있는데, 하나는 inline component이고, 하나는 함수형 컴포넌트를 만들어서 넣는 것이다.
+
+> 결과 화면에서, 만약 링크가 Route된 경로가 존재하지 않는 링크를 클릭 하면, ```<Switch> ~ </switch> ```로 인해 /home 자동으로 이동되는거같다.
