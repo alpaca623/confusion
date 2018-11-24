@@ -53,4 +53,25 @@ https://www.coursera.org/learn/front-end-react/lecture/vdABh/exercise-video-sing
             - **이거 생각보다 엄청 복잡하네** 이렇게 만들 수 있는게 대단한듯..
         - MainComponent.js는 DishDetail을 보여줄 수 있도록 세팅한다.
         - DishDetailComponent는 SPA로 변경하여서, Link를 클릭하여 DishDetail이 보여질 때, 이미지와 comment가 보여질 수 있도록 처리함
-        
+    - **핵 심 >** 라우팅은 한곳에서만 관리하면 되는듯! 알아서 다 찾아간다.
+
+### 3. react.js 4주차 Day 3
+- 리액트 라우터 과제 Task 1-3
+    - https://www.coursera.org/learn/front-end-react/peer/ptyN7/react-router-and-single-page-applications
+
+- 이번엔 과제만
+- Objectives and Outcomes
+    - 제공된 AboutComponent를 단일 페이지 응용프로그램에 통합한다.
+    - RenderLeader() 함수를 통해 [RenderLeader]라는 새로운 기능 구성요소를 actstrap <Media> 구성요소를 사용하여 특정 지시선의 세부 정보를 렌더링하는 AboutComponent.js에 추가함
+    - 위에서 구현한 <RenderLeader> 구성 요소를 사용하여 정보 페이지의 리더 목록을 구성하고 렌더링함.
+- Task 1
+    - AboutComponent를 SPA로 합쳐라.
+        - 먼저 AboutComponent를 다운받고 components 폴더에 넣어라.
+        - MainComponent.js파일에 SPA로 AboutComponent를 통합시켜라. navigation bar와 footer에 링크를 클릭하면 AboutComponent를 나타낼 수 있도록 하여라
+        >> 이건 별거 아니였음 exact 라우터로 /aboutus를 추가해주면 됨. 기본이라 상관 없음 아직
+- Task 2
+    - <RenderLeader> 라는 이름을 가진 새로운 functional component를 구현해라. RenderLeader() function을 만들어서.
+        - ```RenderLeader()``` function은 leader의 상세를 파라미터로 받는다.
+        - leader 정보를 파라미터로 받아 ```RenderLeader()```function을 구현하고 reactstrap의 <Media> component를 사용하여 아래 스크린샷에 보여지는것처럼 leader 정보를 render해라.
+        - AboutComponent에서 <RenderLeader> 컴포넌트를 이용하능하게 만들어라.(**파파고** >>그러면 AboutComponent에서 사용할 수 있는 <RenderLeader> 구성 요소를 사용할 수 있습니다.)
+        >> 음.. 어떻게 되었는데, leader 하나를 SPA 식으로 만드는건 음.. 좀 이해가 안된다. RenderLeader라는 함수형 컴포넌트를 만들고 반복 시켰는데 완성이 되어 버렸다. 어려운 과제는 아니었는데 뭔가 의도한게 제대로 나한테 적용되지 않은거 같아서 좀 그렇다.
