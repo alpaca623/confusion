@@ -32,3 +32,27 @@ https://www.coursera.org/learn/front-end-react/lecture/ezz4V/exercise-video-cont
 - 실제로 contrlled from을 사용해보는 exercise인데, 음.. react에서 controlled from의 핵심은 실시간으로 form을 추적하는 것같다. 일반 바닐라로 하는것보다 더 편하다! 그게 핵심. 어찌됐든 validation처리를 다 해줘야 하지만 편하다.. touched의 의미를 아직은 잘 모르겠지만.. 활성 상태를 의미하는건가? focus가 잡혀 있는지??
     - 위에건 좀 추적 해봐야 겠따
     - 추적 결과 >>>
+
+
+### 3. react.js 5주차 Day 3
+- 제어되지 않는 컴포넌트 (Uncontrolled Components)
+https://www.coursera.org/learn/front-end-react/lecture/ivOeR/uncontrolled-components
+- 제어되지 않는 컴포넌트 만들기 연습
+https://www.coursera.org/learn/front-end-react/supplement/Q3UOZ/exercise-instructions-uncontrolled-forms
+- 풀이
+https://www.coursera.org/learn/front-end-react/lecture/PENVh/exercise-video-uncontrolled-forms
+
+**강의 내용 정리**
+
+- Controlled component를 쓰지 않을만한 간단한 형태를 원하는 경우도 있을 것이다. 그런 간단한 형태를 만드는 방법을  unControlled component라고 한다.
+- 방식은 여러가지가 있는거 같은데, 다음과 같은 방식들이 우선 있다.
+    - DOM 자체에 의해 처리되도록 내버려 두는 경우
+    - DOM 양식 요소에 연관된 참조를 이용해서 처리
+    __(아래는 해석)__
+    - 관리 구성 요소 내에서 양식을 구현하는 것이 이상적입니다.
+    - 때때로 이 접근은 너무 지루할 수 있다.
+    - 제어되지 않는 구성요소 접근 방식을 사용하면 양식 데이터를 DOM 자체에서 처리할 수 있습니다.
+
+- **exercise 정리**
+    - 로그인 폼을 reactStrap의 Modal을 이용하여 만들고, 아이디와 패스워드를 받는 form을 unControlled component를 이용하여 데이터를 처리한다.
+    - 데이터 자체를 이름으로 구분하여, submit 함수에 전달한다. this.username 이런 식으로, 그리고 input element중 하나인 innerRef를 이용하여 데이터를 전달함.
