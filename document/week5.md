@@ -19,3 +19,16 @@ https://www.coursera.org/learn/front-end-react/lecture/2AfDn/exercise-video-cont
     - **변경된 내용 detail**
         - class형태로 변경한 Contact 컴포넌트에 생성자를 만들고, state를 만든다. 각 입력폼 데이터를 저장할 속성을 지정함.
         - 우선 reactstrap에서 폼을 제공해주는데, 그 폼을 이용하면 된다. 
+
+### 2. react.js 5주차 Day 2
+- 제어된 폼 벨리데이션 연습
+https://www.coursera.org/learn/front-end-react/supplement/9GSIO/exercise-instructions-controlled-form-validation
+- 풀이
+https://www.coursera.org/learn/front-end-react/lecture/ezz4V/exercise-video-controlled-form-validation
+
+#### **Controlled Form Validation**
+- Exercise Objectives and Outcomes.
+    - 간단한 from validation 형태를 만들고 설정할 수 있다.
+- 실제로 contrlled from을 사용해보는 exercise인데, 음.. react에서 controlled from의 핵심은 실시간으로 form을 추적하는 것같다. 일반 바닐라로 하는것보다 더 편하다! 그게 핵심. 어찌됐든 validation처리를 다 해줘야 하지만 편하다.. touched의 의미를 아직은 잘 모르겠지만.. 활성 상태를 의미하는건가? focus가 잡혀 있는지??
+    - 위에건 좀 추적 해봐야 겠따
+    - 추적 결과 >>>
