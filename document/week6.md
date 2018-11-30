@@ -9,7 +9,7 @@ https://www.coursera.org/learn/front-end-react/lecture/2Dxmi/exercise-video-intr
 
 **Exercise**
 - detail
-    - redux를 사용하기 위해서는 redux를 받아야 한다.
+    - redux를 사용하기 위해서는 redㅍux를 받아야 한다.
     - 먼저 Redux 폴더를 만든다. 이 폴더에 모든 redux 관련 파일들을 만들 것이다.
     - 먼저 reducer기능을 만들기 위해 reducer.js파일을 만든다. 이 파일의 역할은 '환원기' 역할이다. `환원기`가 뭐지?
     - **다음**
@@ -40,3 +40,38 @@ https://www.coursera.org/learn/front-end-react/lecture/2Dxmi/exercise-video-intr
         export default withRouter(connect(mapStateToProps)(Main));
         ```
     - 우선 작동이 된다. ```withRouter```함수, ```connect``` 함수 이해 필요
+
+### 2. react.js 6주차 Day 2
+
+- 리덕스 폼 (React Redux Forms)에 대한 이해
+https://www.coursera.org/learn/front-end-react/lecture/7wwtA/react-redux-forms
+
+- React Redux Form 설치 및 사용하기
+https://www.coursera.org/learn/front-end-react/supplement/vQeQs/exercise-instructions-react-redux-form
+
+- 풀이
+https://www.coursera.org/learn/front-end-react/lecture/JiE6F/exercise-video-react-redux-form
+
+- Exercise
+    - 이번 exercise에서는 react-redux-form을 이용해서 더 쉽게 form을 지원할 수 있도록 controlled form을 변환할 것이다.
+    
+    - detail
+        1. react-redux-form을 install하고 설정한다.
+        2. react-redux-form을 사용하여 controlled form을 구현한다.
+
+        - 먼저 yarn으로 인스톨을 한다. 다음, ContactComponent.js를 열어, haneldSubmit를 다시 쓴다.
+        - 다음, 폼 소스를 수정한다.
+        - 기존에는 그냥 폼을 썼지만, 이제는 `react-redux-form`에서 제공하는 LocalForm을 사용한다.
+            - 새로 추가된 내용을 참고
+            ```javascript
+            <Control.text model=".first" ~~ />
+            ```
+        - 소스 길이가 좀 줄었다.. 왜 그런지는 풀이를 보고 더 이어서 써야겠음.
+        - **풀이**
+        - 여기서 react-redux-form을 사용하게 되면서 생짜로 만들었던 handleInputChange, handleBlur은 필요가 없어졌다. 이 부분은 react-redux-form이 관리를 해주기 때문이라고 한다..
+        - Q. 어떻게 이게 controlled form으로 동작하는거지..? 
+        - 여기서 모델은 name의 역할을 하는것같다. key 값을 지정하는거같은데 앞에 .을 붙여야하나보다..
+
+        - `<Control.text ~>` 이 부분은 input box를 대체한다. 이부분이 controlled form을 가능하게 해주는 부분같다.
+
+        - **토요일날 싹 다 한번 다시 해봐야겟다**
