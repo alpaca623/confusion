@@ -75,3 +75,17 @@ https://www.coursera.org/learn/front-end-react/lecture/JiE6F/exercise-video-reac
         - `<Control.text ~>` 이 부분은 input box를 대체한다. 이부분이 controlled form을 가능하게 해주는 부분같다.
 
         - **토요일날 싹 다 한번 다시 해봐야겟다**
+
+### 3. react.js 6주차 Day 3
+
+- 리덕스 폼 밸리데이션 (React Redux Form Validation)
+https://www.coursera.org/learn/front-end-react/supplement/PSbMZ/exercise-instructions-react-redux-form-validation
+
+- 풀이
+https://www.coursera.org/learn/front-end-react/lecture/tgjuC/exercise-video-react-redux-form-validation
+
+- detail
+    - form에 validation을 추가하는 exercise
+    - react-redux-form을 사용하여 만든다.
+
+    - 흠.. 좋은데..우선 자동으로 처리해주는게 매우 편리하다
