@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import { Card, CardImg, CardText, CardBody,
-    CardTitle, Breadcrumb, BreadcrumbItem, Button, Modal} from 'reactstrap';
+    CardTitle, Breadcrumb, BreadcrumbItem, Button, Modal, ModalHeader, ModalBody, Label, Row} from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { Control, LocalForm, Errors } from 'react-redux-form';
 
 class CommentForm extends Component{
     constructor(props){
@@ -10,6 +11,8 @@ class CommentForm extends Component{
         this.state = {
             isModalOpen : false
         }
+
+        this.toggleModal = this.toggleModal.bind(this);
     }
 
     toggleModal(){
@@ -21,9 +24,41 @@ class CommentForm extends Component{
     render(){
         return(
             <div>
-                <Button outline color="secondary">✎Submit comment</Button>
-                <Modal isOpen={this.state.isModalOpen}>
-
+                <Button outline color="secondary" onClick={this.toggleModal}>✎Submit comment</Button>
+                <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+                    <ModalHeader toggle={this.toggleModal}>Submit Comment</ModalHeader>
+                    <ModalBody>
+                        <LocalForm onSubmit={()=>this.handleComment}>
+                            <Row className="field">
+                                <Label htmlFor="rating">Rating</Label>
+                                <Control.select model=".rating">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </Control.select>
+                            </Row>
+                            <Row>
+                                <Label htmlFor="author">Your Name</Label>
+                                <Control.text 
+                                    model=".author" 
+                                    id="author" 
+                                    name="author" 
+                                    placeholder="Your Name" 
+                                    className="form-control"
+                                
+                                />
+                            </Row>
+                            <Row>
+                                <Label htmlFor="comment">Comment</Label>
+                                <Control.textarea 
+                                    model=".comment" 
+                                    id="comment" name="comment"
+                                    rows="6"
+                                    className="form-control" 
+                                />
+                            </Row>
+                        </LocalForm>
+                    </ModalBody>
                 </Modal>
             </div>
         )

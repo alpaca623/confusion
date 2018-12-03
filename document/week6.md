@@ -95,8 +95,13 @@ https://www.coursera.org/learn/front-end-react/lecture/tgjuC/exercise-video-reac
 - 리액트 리덕스 폼 과제
 https://www.coursera.org/learn/front-end-react/peer/qp3A0/react-forms-and-redux
 
-- 충 격.. 첫번째 Task1이 이해가 안되었다..
+- Task1
+    - 충 격.. 첫번째 Task1이 이해가 안되었다..
     - 흠.. 버튼 하나도 컴포넌트가 될 수 있다.. 클래스 컴포넌트를 만들라는데 이걸 어떻게 만들어야될지 전혀 감이 안잡혔었다.
     - ->>>> 처음에 했던 나의 생각 : 1. 버튼을 만들고. 2. 버튼에 onClick 이벤트를 이용하여 Modal 창을 띄운다. 이생각을 하니까 아무것도 되지 않았음.. 뭘 어떻게 해야되는건지
 
     - 결론 : comment 밑에다가 클래스컴포넌트를 렌더링 시킨다..그리고 그 안에서 버튼render 시키는거다..
+
+- Task2
+    - Modal창을 만든다. 따라만 했다가 지금 와서 만들려고 하니까 벅찼다..
+    - 여기서는 react-redux-form을 이용해서 modal을 만들었다.
