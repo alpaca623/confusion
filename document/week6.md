@@ -89,3 +89,14 @@ https://www.coursera.org/learn/front-end-react/lecture/tgjuC/exercise-video-reac
     - react-redux-form을 사용하여 만든다.
 
     - 흠.. 좋은데..우선 자동으로 처리해주는게 매우 편리하다
+
+### 4. react.js 6주차 Day 4
+
+- 리액트 리덕스 폼 과제
+https://www.coursera.org/learn/front-end-react/peer/qp3A0/react-forms-and-redux
+
+- 충 격.. 첫번째 Task1이 이해가 안되었다..
+    - 흠.. 버튼 하나도 컴포넌트가 될 수 있다.. 클래스 컴포넌트를 만들라는데 이걸 어떻게 만들어야될지 전혀 감이 안잡혔었다.
+    - ->>>> 처음에 했던 나의 생각 : 1. 버튼을 만들고. 2. 버튼에 onClick 이벤트를 이용하여 Modal 창을 띄운다. 이생각을 하니까 아무것도 되지 않았음.. 뭘 어떻게 해야되는건지
+
+    - 결론 : comment 밑에다가 클래스컴포넌트를 렌더링 시킨다..그리고 그 안에서 버튼render 시키는거다..

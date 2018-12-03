@@ -1,7 +1,35 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { Card, CardImg, CardText, CardBody,
-    CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+    CardTitle, Breadcrumb, BreadcrumbItem, Button, Modal} from 'reactstrap';
 import { Link } from 'react-router-dom';
+
+class CommentForm extends Component{
+    constructor(props){
+        super(props);
+
+        this.state = {
+            isModalOpen : false
+        }
+    }
+
+    toggleModal(){
+        this.setState({
+            isModalOpen:!this.state.isModalOpen
+        });
+    }
+
+    render(){
+        return(
+            <div>
+                <Button outline color="secondary">✎Submit comment</Button>
+                <Modal isOpen={this.state.isModalOpen}>
+
+                </Modal>
+            </div>
+        )
+    }
+
+}
 
 const RenderDish = ({dish}) => {
     return(
@@ -29,7 +57,8 @@ const RenderComments = ({comments}) => {
         return(
             <div>
                 <h4>Comments</h4>
-                {commentList}
+                <div>{commentList}</div>
+                <CommentForm />
             </div>
         )
     }else{
