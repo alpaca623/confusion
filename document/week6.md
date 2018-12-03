@@ -105,3 +105,7 @@ https://www.coursera.org/learn/front-end-react/peer/qp3A0/react-forms-and-redux
 - Task2
     - Modal창을 만든다. 따라만 했다가 지금 와서 만들려고 하니까 벅찼다..
     - 여기서는 react-redux-form을 이용해서 modal을 만들었다.
+
+- Task3
+    - author에 대해서 validators 처리를 하였다.
+    - 핵심은.. form 사용에 대한것? 규칙을 정하는 것도 중요하다. Error을 처리하는것도 중요. model을 같게 해야 에러메세지가 제대로 나온다.
