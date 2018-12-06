@@ -128,6 +128,9 @@ const DishDetail = (props) => {
                 <div className="row">
                     <Breadcrumb>
                         <BreadcrumbItem>
+                            <Link to="/home">Home</Link>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem>
                             <Link to="/menu">Menu</Link>
                         </BreadcrumbItem>
                         <BreadcrumbItem active>{dish.name}</BreadcrumbItem>
