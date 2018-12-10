@@ -22,3 +22,23 @@ https://www.coursera.org/learn/front-end-react/lecture/moj5l/exercise-video-comb
     
 - conclusions
     - In this exercise we have learnt to split the reducer into multiple reducers that manage partial state, and then combine them together.
+
+
+### 2. react.js 7주차 Day 2
+
+- 리덕스 액션 설정하기
+https://www.coursera.org/learn/front-end-react/supplement/1eC3w/exercise-instructions-redux-actions
+
+- 풀이
+https://www.coursera.org/learn/front-end-react/lecture/Q1cLW/exercise-video-redux-actions
+
+- Exercise detail
+    - 이번 exercise의 **목표**는
+        1. Redux actions를 정의하고 action creators를 구현한다.
+        1. Redux store의 system state를 업데이트하기 위해 action creators로부터 action들을 dispatch한다.
+    
+    - 먼저 action type을 정의한다.
+        - 상수변수로 선언 (ADD_COMMENT)
+    - action 생성을 위한 상수함수를 선언한다.
+        - addComment(dishId, rating, author, comment)를 선언, **리턴값**으로는 type과 payload.
+        - ActionTypes.js를 import를 받는다.

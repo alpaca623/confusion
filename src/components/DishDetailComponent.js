@@ -26,6 +26,10 @@ class CommentForm extends Component{
         });
     }
 
+    handleComment(){
+        alert('hihi');
+    }
+
     render(){
         return(
             <div>
@@ -72,6 +76,9 @@ class CommentForm extends Component{
                                     className="form-control" 
                                 />
                             </Row>
+                            <Row>
+                                <Button>Submit</Button>
+                            </Row>
                         </LocalForm>
                     </ModalBody>
                 </Modal>
@@ -93,7 +100,7 @@ const RenderDish = ({dish}) => {
     )
 }
 
-const RenderComments = ({comments}) => {
+const RenderComments = ({comments, addComment, dishId}) => {
     if(comments){
         const commentList = comments.map(({id, comment, author, date}) => {
             const formattedDate = new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(date)));
@@ -108,7 +115,7 @@ const RenderComments = ({comments}) => {
             <div>
                 <h4>Comments</h4>
                 <div>{commentList}</div>
-                <CommentForm />
+                <CommentForm dishId={dishId} addComment={addComment}/>
             </div>
         )
     }else{
@@ -120,8 +127,7 @@ const RenderComments = ({comments}) => {
 
 
 const DishDetail = (props) => {
-    const { dish, comments } = props;
-    console.log(props);
+    const { dish, comments, addComment } = props;
     if(dish){
         return(
             <div className="container">
@@ -145,7 +151,7 @@ const DishDetail = (props) => {
                         <RenderDish dish={dish} />
                     </div>
                     <div className="col-12 col-md-5 m-1">
-                        <RenderComments comments={comments} />
+                        <RenderComments comments={comments} addComment={addComment} dishId={dish.id}/>
                     </div>
                 </div>
             </div>
