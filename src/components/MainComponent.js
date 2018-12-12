@@ -22,6 +22,7 @@ const mapStateToProps = state => {
     }
 }
 
+// 이건 로직이 이해가 안된다.
 const mapDispatchToProps = dispatch => ({
     addComment:(dishId, rating, author, comment) => dispatch(addComment(dishId, rating, author, comment))
 })
@@ -44,7 +45,6 @@ class Main extends Component{
         }
 
         const DishWithId = ({match}) => {
-            console.log(match);
             return(
                 <DishDetail 
                 dish={this.props.dishes.filter((dish) => dish.id === parseInt(match.params.id, 10))[0]}
